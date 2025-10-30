@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tu Nombre – CV</title>
+  <meta name="description" content="Currículum de Tu Nombre" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #0b0e14; /* fondo */
+      --panel: #111522; /* tarjetas */
+      --text: #e6e6e6; /* texto principal */
+      --muted: #9aa4b2; /* texto secundario */
+      --brand: #7c9cff; /* acento */
+      --chip: #1a2032;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:Inter,system-ui,ui-sans-serif,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:radial-gradient(1200px 600px at 90% -10%, #2b3552 0%, rgba(43,53,82,0) 70%),linear-gradient(180deg,#0b0e14, #0b0e14 60%);color:var(--text)}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{opacity:.9}
+    .container{max-width:980px;margin:0 auto;padding:32px 20px 56px}
+    header{display:flex;gap:20px;align-items:center;margin-bottom:28px}
+    .avatar{width:84px;height:84px;border-radius:16px;border:1px solid #222;box-shadow:0 8px 30px rgba(0,0,0,.35);object-fit:cover}
+    .title{display:flex;flex-direction:column;gap:4px}
+    h1{margin:0;font-size:32px;letter-spacing:-0.02em}
+    .subtitle{color:var(--muted)}
+    .actions{margin-left:auto;display:flex;gap:10px;align-items:center}
+    .btn{background:var(--brand);color:#0b0e14;border:none;padding:10px 14px;border-radius:12px;font-weight:600;cursor:pointer;box-shadow:0 8px 24px rgba(124,156,255,.32)}
+    .btn.secondary{background:transparent;color:var(--text);border:1px solid #2a3250}
+    .grid{display:grid;grid-template-columns:1.4fr .9fr;gap:20px}
+    @media (max-width: 860px){.grid{grid-template-columns:1fr}}
+    section{background:var(--panel);border:1px solid #1c2336;border-radius:18px;padding:22px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    section + section{margin-top:18px}
+    h2{margin:0 0 14px 0;font-size:18px;letter-spacing:.02em;color:#d9e1ef}
+    .item{padding:14px 0;border-top:1px dashed #263152}
+    .item:first-child{border-top:none;padding-top:0}
+    .item h3{margin:0 0 6px 0;font-size:16px}
+    .meta{display:flex;gap:10px;flex-wrap:wrap;color:var(--muted);font-size:14px}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .chip{background:var(--chip);border:1px solid #243052;padding:6px 10px;border-radius:999px;font-size:13px;color:#c6d0e3}
+    .list{display:flex;flex-direction:column;gap:8px;color:#cfd6e4}
+    footer{margin-top:32px;color:var(--muted);text-align:center}
+    .links{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+    .tag{font-size:12px;padding:4px 8px;border:1px solid #2a3250;border-radius:999px;color:#b7c2d8}
+    .split{display:flex;gap:12px;flex-wrap:wrap}
+    .badge{font-size:12px;background:#0f162a;border:1px solid #273255;color:#8fa6ff;border-radius:10px;padding:5px 8px}
+    .sr{position:absolute;left:-9999px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img class="avatar" src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Tu foto" />
+      <div class="title">
+        <h1>Tu Nombre</h1>
+        <div class="subtitle">Tu rol • Ciudad, País</div>
+        <div class="links">
+          <a href="mailto:tunombre@email.com" class="tag">tunombre@email.com</a>
+          <a href="https://github.com/tuusuario" class="tag">github.com/tuusuario</a>
+          <a href="https://www.linkedin.com/in/tuusuario" class="tag">LinkedIn</a>
+          <a href="#" class="tag">Descargar PDF</a>
+        </div>
+      </div>
+      <div class="actions">
+        <button class="btn secondary" onclick="document.body.classList.toggle('light')">Tema</button>
+        <a class="btn" href="mailto:tunombre@email.com">Contactar</a>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section>
+          <h2>Experiencia</h2>
+          <div class="item">
+            <h3>Rol – Empresa</h3>
+            <div class="meta"> <span>01/2023 – Actualidad</span> · <span>Remoto</span></div>
+            <ul class="list">
+              <li>Logro medible #1 (p. ej., reduje el tiempo de carga un 35%).</li>
+              <li>Logro medible #2 (p. ej., diseñé e implementé X con Y).</li>
+              <li>Tech: <span class="badge">React</span> <span class="badge">Node</span> <span class="badge">PostgreSQL</span></li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3>Rol – Empresa anterior</h3>
+            <div class="meta"> <span>03/2020 – 12/2022</span> · <span>Ciudad</span></div>
+            <ul class="list">
+              <li>Impacto clave #1.</li>
+              <li>Impacto clave #2.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>Proyectos destacados</h2>
+          <div class="item">
+            <h3>Nombre del proyecto</h3>
+            <div class="meta">
+              <span><a href="https://github.com/tuusuario/proyecto">Repo</a></span> ·
+              <span><a href="https://proyecto.demo">Demo</a></span>
+            </div>
+            <ul class="list">
+              <li>Una línea de qué problema resuelve y el resultado.</li>
+              <li>Stack: <span class="badge">Next.js</span> <span class="badge">Tailwind</span> <span class="badge">Vercel</span></li>
+            </ul>
+            <div class="chips">
+              <span class="chip">#performance</span><span class="chip">#accesibilidad</span><span class="chip">#data</span>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Educación</h2>
+          <div class="item">
+            <h3>Grado/Máster – Universidad</h3>
+            <div class="meta"><span>2015 – 2019</span> · <span>Ciudad</span></div>
+            <div class="list">Mención, becas, GPA si aporta.</div>
+          </div>
+        </section>
+      </main>
+
+      <aside>
+        <section>
+          <h2>Sobre mí</h2>
+          <p>1–2 frases potentes. Ej.: Desarrollador/a full‑stack con 5+ años creando productos SaaS centrados en performance y DX.</p>
+        </section>
+        <section>
+          <h2>Skills</h2>
+          <div class="chips">
+            <span class="chip">JavaScript</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">React</span>
+            <span class="chip">Node</span>
+            <span class="chip">SQL</span>
+            <span class="chip">Docker</span>
+          </div>
+        </section>
+        <section>
+          <h2>Certificaciones</h2>
+          <ul class="list">
+            <li>Certificación X – 2024</li>
+            <li>Certificación Y – 2023</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Idiomas</h2>
+          <div class="split">
+            <span class="badge">Español (nativo)</span>
+            <span class="badge">Inglés (C1)</span>
+          </div>
+        </section>
+      </aside>
+    </div>
+
+    <footer>
+      © <span id="year"></span> Tu Nombre · Hecho con GitHub Pages
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear()
+    // Modo claro opcional
+    const light = `:root{--bg:#f6f7fb;--panel:#ffffff;--text:#0b0e14;--muted:#5b6575;--brand:#3a63ff;--chip:#eef1ff} body{background:radial-gradient(1200px 600px at 90% -10%, #e6ebff 0%, rgba(230,235,255,0) 70%),linear-gradient(180deg,#f6f7fb, #f6f7fb 60%)}`
+    const style = document.createElement('style');
+    const updateTheme = ()=>{ style.textContent = document.body.classList.contains('light') ? light : '' }
+    updateTheme(); document.head.appendChild(style);
+    const prefers = window.matchMedia('(prefers-color-scheme: light)');
+    if(prefers.matches){ document.body.classList.add('light'); updateTheme(); }
+  </script>
+</body>
+</html>
